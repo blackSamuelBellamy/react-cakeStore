@@ -1,0 +1,32 @@
+.productos {
+    width: 80vw;
+    min-height: 80vh;
+    display: grid;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax((200px, auto));
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    grid-auto-flow: dense;
+
+}
+
+.productos img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+@media(min-width: 600px) {
+    .ancho {
+        grid-column: span 2;
+    }
+    
+    .alto {
+        grid-row: span 2;
+    }
+}

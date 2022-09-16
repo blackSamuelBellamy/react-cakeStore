@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Main;
+    src: url(../sources/MsMadi-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Monserrat;
+    src: url(../sources/Montserrat-VariableFont_wght.ttf);
+  }
+
+
+.notFound {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #FCF9F4;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notFound::before {
+    content: '';
+    background: url(../sources/404.webp);
+    width: 100vw;
+    position: absolute;
+    height: 50%;
+    top: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.notFound p {
+    position: absolute;
+    top: 60%;
+    font-family: Main;
+    font-size: 1.8em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.notFound button {
+    position: absolute;
+    top: 70%;
+    font-family: Monserrat;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.notFound button {
+
+    height: 2.5em;
+    width: 7em;
+    background: rgba(30, 69, 200, .9);
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media(max-width: 560px) {
+
+    .notFound p {
+        top: 50%;
+    }
+}
